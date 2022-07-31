@@ -1,0 +1,55 @@
+  .menu {
+    // width: auto;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: fixed;
+    top:0;
+    right:-1000px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 3s ease;
+
+    &.active{
+      right: 0px;
+      
+    }
+    
+    .menuItem {
+      padding: 1rem;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  }
+ 
+  
+
+  @media screen and (min-width: 941px) {
+    .menu {
+      display: none;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      width:100%;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    .menu {
+      width:100%;
+    }
+    
+  }
+
+  

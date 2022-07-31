@@ -1,0 +1,112 @@
+.exp {
+  background-color: #011f4b;
+  display: flex;
+
+  .expLeft {
+    flex: 0.1;
+    background-color: #011f4b;
+  }
+  .expCenter {
+    flex: 0.8;
+    background-color: #011f4b;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  
+  
+  //   .vertical-timeline-element-icon {
+    
+  //     left: 5px;
+  //   }
+
+  //   .vertical-timeline::before {
+      
+  //     left: 29px;
+      
+  // }
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      color: violet;
+      margin-bottom: 75px;
+    }
+    h2 {
+      text-align: center;
+      color:#e3a6f3;
+      margin-top: 160px;
+      margin-bottom: 35px;
+    }
+    .expDate {
+      padding-top: 15px;
+    }
+    .vertical-timeline-element-content {
+      // box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25), 0 0.4em 1.25em 0 rgba(0,0,0,0.15)!important;
+      border-radius: 0;
+      background-color: #011f4b;
+      color: #ccd6f6;
+    }
+    .vertical-timeline-element-icon {
+      top: 4px;
+      width: 50px;
+      height: 50px;
+    }
+   
+    .vertical-timeline::before {
+      background:rgba(236, 186, 246, 0.953);
+      width: 2px;
+    }  
+  }
+  .expRight{
+    flex:0.1;
+    background-color: #011f4b;
+  }
+}
+
+@media only screen and (min-width: 1170px){
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    margin-left: -27px;
+  }
+
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    margin-left: -5px;
+  }
+
+  .vertical-timeline-element:first-child{
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+
+  .vertical-timeline-element:nth-child(2){
+    margin-top: -80px;
+  }
+
+  .vertical-timeline-element:nth-child(4){
+    margin-top: -6rem;
+  }
+
+  .vertical-timeline-element:nth-child(5){
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .exp .expCenter .vertical-timeline-element-icon {
+    
+        left: 5px;
+      }
+  
+  .exp .expCenter.vertical-timeline::before {
+        
+        left: 29px;
+        
+    }
+}
+
+
+
+

@@ -1,0 +1,35 @@
+.email {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 75px;
+    z-index: 10;
+    color: var(--light-slate);
+}  
+
+
+.email_item a {
+    margin: 20px auto;
+    padding: 10px;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode:vertical-rl;
+    text-decoration: none;
+    color: white;
+}
+
+.email_item::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 190px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+@media screen and (max-width: 940px) {
+    .email {
+        display: none;
+    }
+}
